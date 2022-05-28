@@ -58,7 +58,7 @@ function onBtnLoad() {
     .then(({ data }) => {
       createCollection(data.hits)
       //simpleLightBox = new SimpleLightbox('.gallery a')
-       simpleLightBox.refresh()
+      simpleLightBox.refresh()
 
       const totalPages = Math.ceil(data.totalHits / perPage)
 
@@ -70,4 +70,6 @@ function onBtnLoad() {
     })
     .catch(error => console.log(error))
 }
+
+
 
