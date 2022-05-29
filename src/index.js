@@ -61,7 +61,6 @@ function onBtnLoad() {
       simpleLightBox.refresh()
 
       const totalPages = Math.ceil(data.totalHits / perPage)
-
       if (page > totalPages) {
         refs.btnLoad.classList.add('is-hidden') 
         Notify.failure("We're sorry, but you've reached the end of search results.")
